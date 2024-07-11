@@ -1,5 +1,6 @@
 "use client";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import Link from "next/link";
 import React, { use, useState } from "react";
 
 const page = () => {
@@ -35,7 +36,9 @@ const page = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <button>Register</button>
+        <button>Register</button>  
+<br />
+        <Link href={'/login'}>Login</Link>
       </form>
 
 

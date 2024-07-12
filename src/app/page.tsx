@@ -27,6 +27,10 @@ const page = () => {
             <button>Go to profile</button>
           </Link>
           <br />
+          <Link href={"/upload"}>
+            <button>Go to Upload Files</button>
+          </Link>
+          <br />
           <button onClick={logout}>Logout</button>
         </>
       ) : (
